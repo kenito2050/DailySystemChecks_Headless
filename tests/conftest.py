@@ -23,7 +23,8 @@ def chrome(request):
         chrome_options.add_argument("headless")
 
     # Initiate Chrome
-    browser = webdriver.Chrome(chrome_options=chrome_options)
+    # browser = webdriver.Chrome(chrome_options=chrome_options)
+    browser = webdriver.Chrome(executable_path='C:/Wdrivers/chromedriver', chrome_options=chrome_options)
 
     yield browser
 
